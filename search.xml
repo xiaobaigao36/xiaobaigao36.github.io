@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/07/02/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/02/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p>#安装显卡驱动<br>英伟达官网找自己适合自己显卡的<br><a href="https://www.nvidia.cn/Download/index.aspx?lang=cn">https://www.nvidia.cn/Download/index.aspx?lang=cn</a></p>
+<p>cmd命令窗口<br>nvidia-smi看支持的CUDA最高版本</p>
+<p>#Anaconda安装<br>相当于paddlepaddle的环境<br><a href="https://www.anaconda.com/products/individual#Downloads%EF%BC%88anaconda%E5%AE%89%E8%A3%85%EF%BC%89">https://www.anaconda.com/products/individual#Downloads（anaconda安装）</a><br>看anaconda支持版本<br><a href="https://www.cnblogs.com/xiaochouk/p/12081633.html">https://www.cnblogs.com/xiaochouk/p/12081633.html</a> （看历史版本）</p>
+<p>#环境安装<br>conda env list查看已有环境<br>其中base为大环境，我们要通过自己命名搭建训练环境</p>
+<p>利用anaconda</p>
+<p>环境创建：conda create -n pytorch python&#x3D;3.8<br>conda create -n 环境名字（英文） python&#x3D;x.x（python版本）<br>激活环境conda activate pytorch<br>安装pytorch-gpu环境<br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</a><br>conda config –set show_channel_urls yes<br>在pytorch官网找显卡支持的cuda版本<br>#利用paddlepaddle</p>
+<p>环境创建：conda create -n paddle python&#x3D;3.8<br>环境激活<br><a href="https://www.paddlepaddle.org.cn/">https://www.paddlepaddle.org.cn/</a>    paddle官网下载适合的conda<br>#pycharm相关<br>添加环境<br>运行<br>import torch<br>print(torch.cuda.is_available())<br>print(torch.backends.cudnn.is_available())<br>print(torch.cuda_version)<br>print(torch.backends.cudnn.version())看是否安装成功<br>切换插件import paddle<br>print(paddle.utils.run_check())</p>
+]]></content>
+  </entry>
+</search>
