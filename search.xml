@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>/2022/07/02/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<hr>
+<h1 id="Markdown语法总结"><a href="#Markdown语法总结" class="headerlink" title="Markdown语法总结"></a>Markdown语法总结</h1><hr>
+<p>##鸽了 附官网链接吧 [MARKDOWN语法] <a href="https://markdown.com.cn/basic-syntax/lists.html">https://markdown.com.cn/basic-syntax/lists.html</a></p>
+<hr>
+<p>##标题语法</p>
+<hr>
+<h1 id="Heading-level-1-一个‘-’-下列递增-输入中间记得空格"><a href="#Heading-level-1-一个‘-’-下列递增-输入中间记得空格" class="headerlink" title="Heading level 1 一个‘*’ 下列递增 输入中间记得空格"></a>Heading level 1 一个‘*’ 下列递增 输入中间记得空格</h1><h2 id="Heading-level-2"><a href="#Heading-level-2" class="headerlink" title="Heading level 2"></a>Heading level 2</h2><h3 id="Heading-level-3"><a href="#Heading-level-3" class="headerlink" title="Heading level 3"></a>Heading level 3</h3><h4 id="Heading-level-4"><a href="#Heading-level-4" class="headerlink" title="Heading level 4"></a>Heading level 4</h4><h5 id="Heading-level-5"><a href="#Heading-level-5" class="headerlink" title="Heading level 5"></a>Heading level 5</h5><h6 id="Heading-level-6"><a href="#Heading-level-6" class="headerlink" title="Heading level 6"></a>Heading level 6</h6><p>###&#x3D;&#x3D;&#x3D;一级标题 —二级标题</p>
+<hr>
+<p>##段落语法</p>
+<hr>
+<p>###空格与制表符没办法缩进段落<br>###段落创建用空白行进行<br>###举个栗子<br>###I LOVE U<br>###THREE THOUSAND TIMES<br>###I LOVE U THREE THOUSAND TIMES</p>
+<hr>
+<p>##换行语法</p>
+<hr>
+<p>###I <br>love you 加br标签</p>
+<hr>
+<p>##强调语法</p>
+<hr>
+<p>###要加粗文本，请在单词或短语的前后各添加两个星号（asterisks）或下划线（underscores）<br>栗子<br><br>加* I <strong>love</strong> you<br><br>加_ 	I <em>love</em> you </p>
+<hr>
+<p>##引用语法<br>三种 &gt; &gt;&gt; -&gt;  <br><br>效果如下</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/07/02/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p>#安装显卡驱动<br>英伟达官网找自己适合自己显卡的<br><a href="https://www.nvidia.cn/Download/index.aspx?lang=cn">https://www.nvidia.cn/Download/index.aspx?lang=cn</a></p>
+<p>cmd命令窗口<br>nvidia-smi看支持的CUDA最高版本</p>
+<p>#Anaconda安装<br>相当于paddlepaddle的环境<br><a href="https://www.anaconda.com/products/individual#Downloads%EF%BC%88anaconda%E5%AE%89%E8%A3%85%EF%BC%89">https://www.anaconda.com/products/individual#Downloads（anaconda安装）</a><br>看anaconda支持版本<br><a href="https://www.cnblogs.com/xiaochouk/p/12081633.html">https://www.cnblogs.com/xiaochouk/p/12081633.html</a> （看历史版本）</p>
+<p>#环境安装<br>conda env list查看已有环境<br>其中base为大环境，我们要通过自己命名搭建训练环境</p>
+<p>利用anaconda</p>
+<p>环境创建：conda create -n pytorch python&#x3D;3.8<br>conda create -n 环境名字（英文） python&#x3D;x.x（python版本）<br>激活环境conda activate pytorch<br>安装pytorch-gpu环境<br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</a><br>conda config –add channels <a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</a><br>conda config –set show_channel_urls yes<br>在pytorch官网找显卡支持的cuda版本<br>#利用paddlepaddle</p>
+<p>环境创建：conda create -n paddle python&#x3D;3.8<br>环境激活<br><a href="https://www.paddlepaddle.org.cn/">https://www.paddlepaddle.org.cn/</a>    paddle官网下载适合的conda<br>#pycharm相关<br>添加环境<br>运行<br>import torch<br>print(torch.cuda.is_available())<br>print(torch.backends.cudnn.is_available())<br>print(torch.cuda_version)<br>print(torch.backends.cudnn.version())看是否安装成功<br>切换插件import paddle<br>print(paddle.utils.run_check())</p>
+]]></content>
+  </entry>
+</search>
